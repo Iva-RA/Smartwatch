@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #08162B;
+    font-family: 'Mark', sans-serif;
+}
+.container{
+    padding-left: 202px;
+    padding-right: 189px; 
+}
+.maxw{
+    max-width: 1532px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header > div{
+    padding-top: 61px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    display: none;
+}
+label{
+    display: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+li:last-of-type{
+    background: #F29494;
+    padding: 11px 0px 13px 23px ;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 39px;
+    row-gap: 65px;
+}
+.txt-img{
+    grid-column: span 5;
+    margin-top: 115px;
+}
+h1{
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 127px;
+    color: #FFFFFF;
+}
+h3{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.5em;
+    color: #EF9C9C;
+    opacity: 0.5;
+    margin-bottom: 54px;
+    }
+p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    color: #D8D8D8;
+    padding-right: 137px;
+    margin-bottom: 65px;
+}
+.rectangle-duo{
+    display: flex;
+    flex-direction: row;
+    /*grid-template-columns: repeat(6, minmax(0, 1fr)); - grid je od djeda, tako da kod roditelja trebas napomenuti djetetu da je tu grid*/
+    /*grid-column: span 6;*/
+}
+.rectangle{
+    display: inline-block; /*da se slaze blok do bloka*/
+    /*grid-column: span 3;*/
+    background: #2B3544;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 41px;
+    text-align: center;
+}
+.rectangle:first-of-type{
+    margin-right: 39px;
+}
+h2{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: #FFFFFF;
+    padding-top: 17px;
+}
+h4{
+    font-family: 'Mark-Thin';
+    font-weight: 275px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    transform: translate(5%);
+}
+.img{
+    grid-column: span 7;
+    margin-left: 40px;
+}
+@media screen and (max-width: 1632px){
+    .container{
+        padding-left: 180px;
+        padding-right: 169px; 
+    }
+    h1{
+        font-size: 80px;
+        }
+    h3{
+            font-size: 28px;
+       }
+    p{
+        font-size: 18px;
+        padding-right: 0px;
+    }
+    .grid{
+        column-gap: 33px;
+        row-gap: 60px;
+    }
+    h2{
+        font-size: 32px;
+        padding-top: 14px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .rectangle{
+        width: 250px;
+    }
+    .sat{
+        width: 200px;
+        height: auto;
+    }
+    .slika{
+        width: 100%;
+        padding-left: 50px;
+        padding-top: 60px;
+    }
+
+}
+@media screen and (max-width: 1317px){
+    .container{
+        padding-left: 140px;
+        padding-right: 145px; 
+    }
+    .logo{
+        width: 180px;
+    }
+    li a{
+        font-size: 18px;
+    }
+    .txt-img{
+        margin-top: 80px;
+    }
+    h1{
+       font-size: 60px; 
+       line-height: 100px;
+    }
+    h3{
+        font-size: 21px;
+        margin-bottom: 33px;
+   }
+    p{
+    font-size: 15px;
+    padding-right: 0px;
+    margin-bottom: 40px;
+    }
+    .grid{
+        column-gap: 33px;
+        row-gap: 55px;
+    }
+    .rectangle{
+        border-radius: 30px;
+    }
+    h2{
+        font-size: 29px;
+        padding-top: 12px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .sat{
+        width: 180px;
+        height: auto;
+    }
+    .slika{
+        width: 120%;
+        padding-left: 20px;
+        padding-top: 55px;
+    }
+    .img{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .container{
+        padding-left: 120px;
+        padding-right: 110px; 
+    }
+    .logo{
+        width: 140px;
+    }
+    li a{
+        font-size: 15px;
+        margin-right: 40px;
+    }
+    h1{
+       font-size: 50px; 
+    }
+    h3{
+        font-size: 18px;
+   }
+    p{
+    font-size: 14px;
+    padding-right: 0px;
+    }
+    .grid{
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    .rectangle{
+        border-radius: 22px;
+    }
+    h2{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .sat{
+        width: 150px;
+        height: auto;
+    }
+    .img{
+        margin-left: 10px;
+    }
+    .slika{
+        width: 120%;
+        padding-left: 20px;
+        padding-top: 55px;
+    }
+}
+@media screen and (max-width:952px){
+    .container{
+        padding-left: 100px;
+        padding-right: 92px; 
+    }
+    .logo{
+        width: 120px;
+    }
+    li a{
+        font-size: 15px;
+        margin-right: 25px;
+    }
+    li:last-of-type{
+        background: #F29494;
+        padding: 8px 0px 10px 20px ;
+    }
+    .txt-img{
+        margin-top: 50px;
+    }
+    h1{
+       font-size: 45px; 
+       line-height: 65px;
+    }
+    h3{
+        font-size: 16px;
+   }
+    p{
+    margin-bottom: 30px;
+    }
+    .rectangle{
+        border-radius: 20px;
+    }
+    h2{
+        font-size: 22px;
+        padding-top: 8px;
+        line-height: 30px;
+    }
+    h4{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .sat{
+        width: 150px;
+        height: auto;
+    }
+    .img{
+        margin-left: 0px;
+    }
+    .slika{
+        width: 120%;
+        padding-left: 20px;
+        padding-top: 55px;
+    }
+}
+@media screen and (max-width:765px){
+    .container{
+        padding-left: 80px;
+        padding-right: 74px; 
+    }
+    .logo{
+        width: 100px;
+    }
+    li a{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    li:last-of-type{
+        background: #F29494;
+        padding: 6px 0px 4px 18px ;
+    }
+    .txt-img{
+        margin-top: 45px;
+    }
+    h1{
+       font-size: 40px; 
+       line-height: 60px;
+    }
+    h3{
+        font-size: 14px;
+   }
+    p{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .rectangle{
+        border-radius: 17px;
+    }
+    h2{
+        font-size: 20px;
+        padding-top: 8px;
+        line-height: 25px;
+    }
+    h4{
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .sat{
+        width: 120px;
+    }
+    .slika{
+        width: 110%;
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width:668px){
+    .container{
+        padding-left: 60px;
+        padding-right: 55px; 
+    }
+    header > div{
+        padding-top: 41px;
+    }
+    .logo{
+        width: 80px;
+    }
+    li a{
+        font-size: 13px;
+        margin-right: 15px;
+    }
+    li:last-of-type{
+        background: #F29494;
+        padding: 4px 0px 4px 15px ;
+    }
+    h1{
+       font-size: 35px; 
+       line-height: 40px;
+    }
+    h3{
+        font-size: 13px;
+   }
+    p{
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+    .rectangle{
+        border-radius: 15px;
+    }
+    .rectangle:first-of-type{
+        margin-right: 25px;
+    }
+    h2{
+        font-size: 17px;
+        padding-top: 7px;
+        line-height: 22px;
+    }
+    h4{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .sat{
+        width: 100px;
+    }
+}
+@media screen and (max-width:608px){
+    .container{
+        padding-left: 50px;
+        padding-right: 40px; 
+    }
+    header > div{
+        padding-top: 35px;
+    }
+    .logo{
+        width: 60px;
+    }
+    li a{
+        font-size: 12px;
+        margin-right: 12px;
+    }
+    li:last-of-type{
+        background: #F29494;
+        padding: 4px 0px 4px 15px ;
+    }
+    h1{
+       font-size: 30px; 
+       line-height: 35px;
+    }
+    h3{
+        font-size: 12px;
+        margin-bottom: 25px;
+   }
+    p{
+        font-size: 11px;
+        line-height: 14px;
+        margin-bottom: 18px;
+    }
+    .grid{
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .rectangle{
+        border-radius: 13px;
+    }
+    .rectangle:first-of-type{
+        margin-right: 20px;
+    }
+    h2{
+        font-size: 15px;
+        padding-top: 6px;
+        line-height: 19px;
+    }
+    h4{
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .sat{
+        width: 80px;
+    }
+    .slika{
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width:535px){
+    .container{
+        padding-left: 40px;
+        padding-right: 30px; 
+    }
+    header > div{
+        padding-top: 30px;
+    }
+    input{
+        display: none;
+    }
+    label{
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font: 40px;
+        padding: 8px 6px;
+        transition: all .25s ease;
+    }
+    label:hover{
+        color: orange;
+    }
+    ul{
+        display: none;
+    }
+    h1{
+       font-size: 25px; 
+       line-height: 30px;
+    }
+    h3{
+        font-size: 11px;
+        margin-bottom: 20px;
+   }
+    p{
+        font-size: 9px;
+        line-height: 10px;
+        margin-bottom: 14px;
+    }
+    .grid{
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .rectangle{
+        border-radius: 11px;
+    }
+    .rectangle:first-of-type{
+        margin-right: 17px;
+    }
+}
+@media screen and (max-width:493px){
+    .container{
+        padding-left: 25px;
+        padding-right: 16px; 
+    }
+    header > div{
+        padding-top: 30px;
+    }
+    .logo{
+        width: 80px;
+    }
+    input{
+        display: none;
+    }
+    label{
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font: 40px;
+        padding: 8px 6px;
+        transition: all .25s ease;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .txt-img{
+        grid-column: span 12;
+    }
+    .txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+       font-size: 35px; 
+       line-height: 35px;
+    }
+    p{
+        font-size: 11px;
+        line-height: 14px;
+        margin-bottom: 14px;
+    }
+    .rectangle:first-of-type{
+        margin-right: 18px;
+    }
+    .sat{
+        width: 130px;
+    }
+    .img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .slika{
+        width: 100%;
+    }
+}
